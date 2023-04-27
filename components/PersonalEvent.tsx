@@ -2,12 +2,13 @@ import React from "react";
 import { CalendarDaysIcon } from "@heroicons/react/24/outline";
 import { NewspaperIcon } from "@heroicons/react/24/outline";
 import { MapPinIcon } from "@heroicons/react/24/outline";
+import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 
 const PersonalEvent = () => {
   return (
-    <div className="mx-auto max-w-4xl px-5 py-16 sm:px-0">
-      <div className="grid grid-cols-1  sm:grid-cols-2">
-        <div className="relative h-80 w-80 bg-white py-2 shadow-lg">
+    <div className="mx-auto max-w-5xl px-5 py-16 sm:px-0">
+      <div className="grid grid-cols-1 gap-x-20 sm:grid-cols-2">
+        <div className="relative w-80 mx-auto bg-white py-2 shadow-lg sm:h-80">
           <div className="border-b border-gray-200 bg-white px-4 py-5 sm:px-6">
             <div className="-ml-4 -mt-4 flex flex-wrap items-center justify-between sm:flex-nowrap">
               <div className="ml-4 mt-4">
@@ -35,37 +36,46 @@ const PersonalEvent = () => {
             <p>Event</p>
             <button className="bg-gray-200 p-1">+ New event</button>
           </div>
-          <div className="absolute  -bottom-20 left-[11%] z-10 w-64 bg-white shadow-lg">
+          <div className="relative z-10 mx-auto w-64 bg-white shadow-lg my-5 sm:mt-0 sm:absolute sm:-bottom-20 sm:left-[11%]">
             <div className="relative mb-2">
-              <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-2">
-                <NewspaperIcon className="h-6 w-6 text-gray-400" />
+              <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                <NewspaperIcon
+                  className="h-5 w-5 text-gray-400"
+                  aria-hidden="true"
+                />
               </div>
               <input
-                type="text"
-                id="input-group-1"
-                className="block w-full rounded-sm  border border-gray-300  p-2.5 pl-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 "
-                placeholder="Name your event"
+                id="search"
+                name="search"
+                className="block w-full rounded-md border-0 bg-white py-1.5 pl-10 pr-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 placeholder:font-medium focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                placeholder="Name your Event"
+                type="search"
               />
             </div>
             <div className="relative mb-2">
-              <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-2">
-                <CalendarDaysIcon className="h-6 w-6 text-gray-400" />
+              <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                <CalendarDaysIcon
+                  className="h-5 w-5 text-gray-400"
+                  aria-hidden="true"
+                />
               </div>
               <input
-                type="text"
-                id="input-group-1"
-                className="block w-full rounded-sm  border border-gray-300  p-2.5 pl-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 "
+                id="search"
+                name="search"
+                className="block w-full rounded-md border-0 bg-white py-1.5 pl-10 pr-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 placeholder:font-medium focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 placeholder="Date and Time"
+                type="search"
               />
             </div>
+
             <div className="relative space-y-3 border p-2">
-              <div className="flex p-2 ">
+              <div className="flex ">
                 <MapPinIcon className="mr-1 h-6 w-6 text-gray-400" />
-                <p className=" text-sm text-gray-500 focus:border-blue-500 focus:ring-blue-500 ">
+                <p className=" text-sm text-gray-400 font-medium focus:border-blue-500 focus:ring-blue-500 ">
                   Location of your event
                 </p>
               </div>
-              <div className="flex justify-center space-x-5 text-sm text-gray-500">
+              <div className="flex justify-center space-x-5 text-sm text-gray-400">
                 <button className="rounded-sm border px-3  py-1 hover:bg-gray-100">
                   Venue
                 </button>
@@ -77,16 +87,17 @@ const PersonalEvent = () => {
                 </button>
               </div>
               <input
-                type="text"
-                id="input-group-1"
-                className="w-full rounded-sm border  border-gray-300 pl-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 "
+                id="search"
+                name="search"
+                className="block w-full rounded-md border-0 bg-white py-1.5 pl-10 pr-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 placeholder="Search for an address"
+                type="search"
               />
             </div>
           </div>
         </div>
 
-        <div className="space-y-10 text-left">
+        <div className="space-y-10 pt-7 sm:pt-0 text-left">
           <h3 className="text-2xl font-semibold tracking-tight text-[#a0600cfb] sm:text-4xl">
             Allow you to create your personal event
           </h3>
