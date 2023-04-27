@@ -1,4 +1,3 @@
-// import HeroSection from ".././components/HeroSection";
 import HeroSection from "@/components/HeroSection";
 import Events from "@/components/Events";
 import SpecialOffers from "@/components/SpecialOffers";
