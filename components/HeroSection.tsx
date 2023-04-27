@@ -18,7 +18,7 @@ export default function HeroSection() {
               <p>COFFEE PLACE</p>
             </h1>
             <p className="mt-6 text-lg text-gray-300">
-              What We Call The 3 C's <br /> Coffee - community - convenience
+              What We Call The 3 C&apos;s <br /> Coffee - community - convenience
             </p>
             <div className="mt-10">
               <a
