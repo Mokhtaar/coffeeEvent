@@ -2,14 +2,18 @@
 
 export default function HeroSection() {
   return (
-    <div className="bg-gray-900">
-      <div className="relative isolate overflow-hidden">
+    <div className="">
+      <div className="relative isolate">
         <img
-          src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80"
+          src="./heroImg.png"
           alt=""
-          className="absolute inset-0 -z-10 h-full w-full object-cover"
+          className="absolute inset-0 -z-10 h-full object-cover"
         />
-
+        <img
+          src="./cup.png"
+          alt=""
+          className="w- z-1 absolute -bottom-56 right-20 h-[580px]"
+        />
         <div className="ml-20 max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="text-left">
             <h1 className="space-y-8 text-4xl font-bold tracking-wider text-white sm:text-6xl">
@@ -18,7 +22,8 @@ export default function HeroSection() {
               <p>COFFEE PLACE</p>
             </h1>
             <p className="mt-6 text-lg text-gray-300">
-              What We Call The 3 C&apos;s <br /> Coffee - community - convenience
+              What We Call The 3 C&apos;s <br /> Coffee - Community -
+              Convenience
             </p>
             <div className="mt-10">
               <a

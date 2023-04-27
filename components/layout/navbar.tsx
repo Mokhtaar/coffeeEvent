@@ -24,12 +24,12 @@ export default function NavBar() {
         <>
           <div className="mx-auto max-w-7xl px-2 py-4 sm:px-4 lg:px-8">
             <div className="relative flex h-16 justify-between">
-              <div className="flex items-center gap-x-4">
+              <div className="flex items-center gap-x-10">
                 <div className="relative z-10 flex px-2 lg:px-0">
                   <div className="flex flex-shrink-0 items-center">
                     <img
-                      className="block h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                      className="block cursor-pointer h-20 w-auto"
+                      src="./CoffeeEvent.png"
                       alt="Your Company"
                     />
                   </div>
