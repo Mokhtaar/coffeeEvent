@@ -76,7 +76,7 @@ export default function Footer() {
       className="pt-1 backdrop-blur-3xl"
       aria-labelledby="footer-heading"
       style={{
-        backgroundImage: `url("https://images.unsplash.com/photo-1619615174792-a5edcfeafdfe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=80")`,
+        backgroundImage: `url("./footer.png")`,
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -90,8 +90,8 @@ export default function Footer() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
             <img
-              className="h-7"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+              className="h-28 w-auto"
+              src="./CoffeeEvent.png"
               alt="Company name"
             />
             <p className="text-sm leading-6 text-gray-300">

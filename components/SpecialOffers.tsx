@@ -30,7 +30,7 @@ export default function Offers() {
   return (
     <div className="">
       <div className="mx-auto max-w-7xl space-y-14">
-        <h3 className="text-center text-2xl font-semibold tracking-tight text-[#a0600cfb] sm:text-5xl">
+        <h3 className="text-center text-2xl font-semibold tracking-tight text-[#a0600cfb] sm:text-4xl">
           Special offers
         </h3>
         <div className="w-full place-items-center overflow-hidden sm:grid sm:grid-cols-4 sm:gap-px">
