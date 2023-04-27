@@ -7,7 +7,7 @@ export default function Subscribe() {
             Subscribe To Join the Community
           </h2>
           <p className="mt-8">
-            Lorem Ipsum has been the industry's standard dummy text ever since
+            Lorem Ipsum has been the industry&apos;s standard dummy text ever since
             the 1500s, Lorem Ipsum has been the
           </p>
         </div>
