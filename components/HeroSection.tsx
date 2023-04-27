@@ -5,9 +5,9 @@ export default function HeroSection() {
     <div className="">
       <div className="relative isolate">
         <img
-          src="./heroImg.png"
+          src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80"
           alt=""
-          className="absolute inset-0 -z-10 h-full object-cover"
+          className="absolute inset-0 -z-10 h-full w-full object-cover"
         />
         <img
           src="./cup.png"
