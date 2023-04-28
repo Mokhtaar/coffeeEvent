@@ -1,10 +1,10 @@
-import HeroSection from "@/components/HeroSection";
-import Events from "@/components/Events";
-import SpecialOffers from "@/components/SpecialOffers";
-import Favorites from "@/components/Favorites";
-import Subscribe from "@/components/Subscribe";
-import TopCategory from "@/components/TopCategory";
-import PersonalEvent from "@/components/PersonalEvent";
+import HeroSection from "@/components/Home/HeroSection";
+import Events from "@/components/Home/Events";
+import SpecialOffers from "@/components/Home/SpecialOffers";
+import Favorites from "@/components/Home/Favorites";
+import Subscribe from "@/components/Home/Subscribe";
+import TopCategory from "@/components/Home/TopCategory";
+import PersonalEvent from "@/components/Home/PersonalEvent";
 
 export default async function Home() {
   return (
