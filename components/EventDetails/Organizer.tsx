@@ -41,7 +41,7 @@ const Organizer = () => {
           </div>
           <p className="mt-4 max-w-xs px-2 text-center text-[10px]">
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
+            industry. Lorem Ipsum has been the industry&apos;s standard dummy text
             ever since the 1500s
           </p>
           <a href="#" className="mt-2 text-[10px]">
