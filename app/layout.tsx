@@ -4,7 +4,6 @@ import cx from "classnames";
 import { sfPro, inter } from "./fonts";
 import NavBar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
-import { Suspense } from "react";
 
 export const metadata = {
   title: "Precedent - Building blocks for your Next.js project",
