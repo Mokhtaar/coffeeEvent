@@ -19,7 +19,7 @@ function classNames(...classes: any) {
 
 export default function NavBar() {
   return (
-    <Disclosure as="header" className="fixed z-10 w-full backdrop-blur-lg">
+    <Disclosure as="header" className="fixed z-50 w-full backdrop-blur-lg">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 py-4 sm:px-4 lg:px-8">
