@@ -1,18 +1,18 @@
 export default function Subscribe() {
   return (
-    <div className="py-16 sm:py-24 lg:py-32">
-      <div className="mx-auto grid max-w-7xl grid-rows-2 px-6 lg:gap-8 lg:px-8">
+    <div className="sm:py-24 lg:py-32">
+      <div className="mx-auto grid max-w-7xl grid-rows-2 px-[14px] lg:gap-8 lg:px-8">
         <div className="mx-auto">
           <h2 className="inline text-3xl font-bold tracking-normal text-gray-900 sm:block sm:text-5xl lg:inline xl:block">
             Subscribe To Join the Community
           </h2>
-          <p className="mt-8">
+          <p className="mt-8 mb-4">
             Lorem Ipsum has been the industry&apos;s standard dummy text ever
             since the 1500s, Lorem Ipsum has been the
           </p>
         </div>
         <form className="mx-auto w-full max-w-lg lg:pt-2">
-          <div className="flex gap-x-4">
+          <div className="sm:flex gap-x-4">
             <label htmlFor="email-address" className="sr-only">
               Email address
             </label>

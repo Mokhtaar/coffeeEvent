@@ -35,7 +35,7 @@ const TopCategory = () => {
           </p>
         </div>
       </div>
-      <div className="mx-auto grid place-items-center gap-3 sm:grid-cols-4 sm:grid-rows-2">
+      <div className="mx-auto grid place-items-center gap-3 md:grid-cols-4 grid-cols-2 sm:grid-rows-2 px-[14px]">
         <img
           className=""
           src="https://images.unsplash.com/photo-1550681560-af9bc1cb339e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"

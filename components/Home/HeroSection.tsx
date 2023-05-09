@@ -12,11 +12,11 @@ export default function HeroSection() {
         <img
           src="./cup.png"
           alt=""
-          className="w- z-1 absolute -bottom-56 right-20 h-[580px]"
+          className="z-1 absolute lg:-bottom-56 bottom-[-100px] lg:right-20 right-0 lg:h-[580px] sm:h-[400px] h-[240px]"
         />
-        <div className="ml-20 max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="lg:ml-20 sm:ml-[24px] ml-[14px] max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="text-left">
-            <h1 className="space-y-8 text-4xl font-bold tracking-wider text-white sm:text-6xl">
+            <h1 className="lg:space-y-8 lg:text-4xl sm:text-[40px] text-[30px] font-bold tracking-wider text-white">
               <p>TIME TO </p>
               <p> DISCOVER</p>
               <p>COFFEE PLACE</p>

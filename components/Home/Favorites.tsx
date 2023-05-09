@@ -6,7 +6,7 @@ export default function Favorites() {
       <main>
         <div className="relative isolate">
           <div className="overflow-hidden">
-            <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
+            <div className="mx-auto max-w-7xl px-6 sm:pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
               <div className="relative mx-auto gap-x-14 lg:mx-0 lg:max-w-none">
                 <img
                   className="absolute right-[3%] top-[87px] w-[61%]"
@@ -18,7 +18,7 @@ export default function Favorites() {
                 ></img>
 
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                  <h1 className="max-w-lg text-4xl font-bold leading-[4rem] text-gray-900 sm:text-5xl">
+                  <h1 className="max-w-lg lg:text-4xl sm:text-[40px] text-[30px] font-bold md:leading-[4rem] text-gray-900 sm:text-5xl">
                     All your Favorites in one place
                   </h1>
                   <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
@@ -26,25 +26,25 @@ export default function Favorites() {
                     Heart And Have Them All In One Easy To Recall List.
                   </p>
                 </div>
-                <div className="flex-col-reverse items-center gap-x-32 pt-16 sm:flex sm:flex-row">
+                <div className="flex-col-reverse items-center xl:gap-x-32 lg:gap-x-[4rem] gap-x-[2rem] pt-16 sm:flex sm:flex-row">
                   <div className="relative">
                     <img
                       src="./left.png"
-                      className="w-[400px] object-contain"
+                      className="lg:w-[400px] md:w-[300px] w-full object-contain"
                     ></img>
                     <img
                       src="./bottom.png"
-                      className="absolute -bottom-[20%] -right-[50%] z-10 w-[300px]"
+                      className="md:absolute -bottom-[20%] xl:-right-[50%] lg:-right-[20%] right-[-50px] z-10 lg:w-[300px] md:w-[200px] w-full "
                     ></img>
                   </div>
                   <div className="relative">
                     <img
                       src="./right.png"
-                      className="w-[400px] object-contain"
+                      className="lg:w-[400px] md:w-[300px] w-full object-contain"
                     ></img>
                     <img
                       src="./up.png"
-                      className="absolute -right-[50%] -top-[20%] w-[300px]"
+                      className="md:absolute xl:-right-[50%] lg:-right-[20%] right-[-50px] -top-[20%] lg:w-[300px] md:w-[200px] w-full "
                     ></img>
                   </div>
                 </div>

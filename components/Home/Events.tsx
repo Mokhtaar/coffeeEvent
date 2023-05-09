@@ -111,7 +111,7 @@ export default function Events() {
             Events Near You
           </h3>
         </div>
-        <div className="mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+        <div className="mx-auto mt-5 grid max-w-2xl md:grid-cols-2 gap-x-8 md:gap-y-20 gap-y-6 lg:mx-0 lg:max-w-none lg:grid-cols-4">
           {posts.map((post) => (
             <article
               key={post.id}
