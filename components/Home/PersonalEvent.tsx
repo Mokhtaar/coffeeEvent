@@ -6,9 +6,9 @@ import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 
 const PersonalEvent = () => {
   return (
-    <div className="mx-auto max-w-5xl px-5 py-16 sm:px-0">
-      <div className="grid grid-cols-1 gap-x-20 sm:grid-cols-2">
-        <div className="relative w-80 mx-auto bg-white py-2 shadow-lg sm:h-80">
+    <div className="mx-auto max-w-5xl px-5 py-16 sm:px-[14px]">
+      <div className="grid grid-cols-1 gap-x-20 md:grid-cols-2">
+        <div className="relative sm:w-80 mx-auto bg-white py-2 shadow-lg sm:h-80 sm:px-0 px-[14px]">
           <div className="border-b border-gray-200 bg-white px-4 py-5 sm:px-6">
             <div className="-ml-4 -mt-4 flex flex-wrap items-center justify-between sm:flex-nowrap">
               <div className="ml-4 mt-4">
@@ -96,9 +96,8 @@ const PersonalEvent = () => {
             </div>
           </div>
         </div>
-
-        <div className="space-y-10 pt-7 sm:pt-0 text-left">
-          <h3 className="text-2xl font-semibold tracking-tight text-[#a0600cfb] sm:text-4xl">
+        <div className="space-y-10 pt-7 sm:pt-0 text-left md:mt-0 sm:mt-[100px]">
+          <h3 className="md:text-4xl text-[30px] font-semibold tracking-tight text-[#a0600cfb]">
             Allow you to create your personal event
           </h3>
           <ul className="ml-3 list-outside list-disc space-y-4">

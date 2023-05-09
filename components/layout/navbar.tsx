@@ -55,7 +55,7 @@ export default function NavBar() {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center">
+              <div className="lg:flex hidden items-center">
                 <Menu as="div" className="relative inline-block text-left">
                   <div>
                     <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md  px-3 py-2 text-sm font-semibold text-white hover:bg-gray-50 hover:text-gray-900">
