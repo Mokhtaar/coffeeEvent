@@ -18,10 +18,10 @@ export default function Favorites() {
                 ></img>
 
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                  <h1 className="max-w-lg lg:text-4xl sm:text-[40px] text-[30px] font-bold md:leading-[4rem] text-gray-900 sm:text-5xl">
+                  <h1 className="max-w-lg lg:text-[60px] sm:text-[40px] text-[30px] font-bold md:leading-[4rem] text-[#613907] capitalize">
                     All your Favorites in one place
                   </h1>
-                  <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
+                  <p className="relative mt-6 text-2xl leading-8 sm:max-w-md lg:max-w-none font-Body font-medium text-[#613907]">
                     Found Your favorite Local Specialty Coffee Spot? Hit That
                     Heart And Have Them All In One Easy To Recall List.
                   </p>

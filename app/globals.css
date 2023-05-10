@@ -1,11 +1,29 @@
 @tailwind base;
 body {
-    @apply text-amber-900;
-  }
+  @apply text-amber-900;
+}
 @tailwind components;
 @tailwind utilities;
 
-
 .heart:hover {
-    fill: red;
-  }
+  fill: red;
+}
+:root {
+  --font-heading: "AgencyFB";
+  --font-body:'Poppins'
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap');
+
+@font-face {
+  font-family: "AgencyFB";
+  src: url("./fonts/AgencyFB-Bold.otf");
+  src: url("./fonts/AgencyFB-Bold.eot") format("embedded-opentype"),
+    url("./fonts/AgencyFB-Bold.woff2") format("woff2"),
+    url("./fonts/AgencyFB-Bold.woff") format("woff"),
+    url("./fonts/AgencyFB-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

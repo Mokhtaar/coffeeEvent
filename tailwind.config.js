@@ -11,6 +11,9 @@ module.exports = {
       fontFamily: {
         display: ["var(--font-sf)", "system-ui", "sans-serif"],
         default: ["var(--font-inter)", "system-ui", "sans-serif"],
+        Heading: ["var(--font-heading)", "sans-serif"],
+        WorkSans: ["Work Sans", "sans-serif"],
+        Body: ["var(--font-body)", "sans-serif"],
       },
       animation: {
         // Fade up and down
