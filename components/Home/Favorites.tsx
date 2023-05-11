@@ -6,14 +6,14 @@ export default function Favorites() {
       <main>
         <div className="relative isolate">
           <div className="overflow-hidden">
-            <div className="mx-auto max-w-7xl px-6 sm:pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
+            <div className="mx-auto lg:px-[160px] px-6 sm:pb-32 pt-36 sm:pt-60 lg:pt-32">
               <div className="relative mx-auto gap-x-14 lg:mx-0 lg:max-w-none">
                 <img
-                  className="absolute right-[3%] top-[87px] w-[61%]"
+                  className="absolute right-[3%] top-[87px] w-[61%] md:block hidden"
                   src="./beans.png"
                 ></img>
                 <img
-                  className="absolute -bottom-[37%] -left-[9.5rem] w-[75%]"
+                  className="absolute -bottom-[37%] -left-[9.5rem] w-[75%] md:block hidden"
                   src="./beanss.png"
                 ></img>
 

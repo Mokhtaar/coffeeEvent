@@ -16,7 +16,7 @@ export default function HeroSection() {
           <Image
             src={Herouser}
             alt="herouser"
-            className="absolute lg:-top-[2.75rem] -top-[1.8rem] right-0 ml-auto h-full w-[71%] object-cover -z-10"
+            className="absolute lg:-top-[2.75rem] -top-[1.8rem] right-0 ml-auto h-full 3xl:w-[71%] object-cover -z-10"
           />
         <img
           src="./cup.png"

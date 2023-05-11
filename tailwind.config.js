@@ -15,6 +15,12 @@ module.exports = {
         WorkSans: ["Work Sans", "sans-serif"],
         Body: ["var(--font-body)", "sans-serif"],
       },
+      dropShadow: {
+        'event': '4px 8px 30px #00000066',
+      },
+      boxShadow: {
+        'event': '4px 8px 30px #00000066',
+      },
       animation: {
         // Fade up and down
         "fade-up": "fade-up 0.5s",
