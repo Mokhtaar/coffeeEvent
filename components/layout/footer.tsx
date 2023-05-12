@@ -85,8 +85,8 @@ export default function Footer() {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="absolute inset-0 -z-10 bg-[#1a1a1a] opacity-70"></div>
-      <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+      <div className="absolute inset-0 -z-10 bg-[#221501] bg-opacity-[0.85]"></div>
+      <div className="mx-auto px-6 pb-8 pt-16 sm:pt-24 lg:px-[160px] lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
             <img
@@ -94,9 +94,9 @@ export default function Footer() {
               src="./CoffeeEvent.png"
               alt="Company name"
             />
-            <p className="text-sm leading-6 text-gray-300">
-              Making the world a better place through constructing elegant
-              hierarchies.
+            <p className="max-w-[525px] font-Body text-[20px] leading-6 text-[#EFE3D5]">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna
             </p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (
@@ -111,18 +111,18 @@ export default function Footer() {
               ))}
             </div>
           </div>
-          <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
+          <div className="mt-16 grid grid-cols-1 gap-8 xl:col-span-2 xl:mt-0">
+            <div className="md:grid md:grid-cols-3 sm:grid-cols-2 xl:gap-[10%] md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold leading-6 text-white">
-                  Solutions
+                <h3 className="text-[#EFE3D5] font-Body text-[25px] font-black mb-[75px]">
+                  About
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.About.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-300 hover:text-white"
+                        className="text-[#EFE3D5] font-Body text-[20px]"
                       >
                         {item.name}
                       </a>
@@ -131,15 +131,15 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-white">
-                  Support
+                <h3 className="text-[#EFE3D5] font-Body text-[25px] font-black mb-[75px]">
+                  Comapny
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.Company.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-300 hover:text-white"
+                        className="text-[#EFE3D5] font-Body text-[20px]"
                       >
                         {item.name}
                       </a>
@@ -147,18 +147,16 @@ export default function Footer() {
                   ))}
                 </ul>
               </div>
-            </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold leading-6 text-white">
-                  Company
+                <h3 className="text-[#EFE3D5] font-Body text-[25px] font-black mb-[75px]">
+                  Contact Us
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.ContactUs.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-300 hover:text-white"
+                        className="text-[#EFE3D5] font-Body text-[20px]"
                       >
                         {item.name}
                       </a>

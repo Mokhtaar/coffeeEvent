@@ -11,6 +11,15 @@ module.exports = {
       fontFamily: {
         display: ["var(--font-sf)", "system-ui", "sans-serif"],
         default: ["var(--font-inter)", "system-ui", "sans-serif"],
+        Heading: ["var(--font-heading)", "sans-serif"],
+        WorkSans: ["Work Sans", "sans-serif"],
+        Body: ["var(--font-body)", "sans-serif"],
+      },
+      dropShadow: {
+        'event': '4px 8px 30px #00000066',
+      },
+      boxShadow: {
+        'event': '4px 8px 30px #00000066',
       },
       animation: {
         // Fade up and down

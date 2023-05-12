@@ -1,34 +1,43 @@
 "use client";
+import Link from "next/link";
+import Hero from "../../public/hero.png";
+import Image from "next/image";
+import Herouser from "../../public/herouse.png";
 
 export default function HeroSection() {
   return (
     <div className="">
       <div className="relative isolate">
-        <img
-          src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80"
-          alt=""
-          className="absolute inset-0 -z-10 h-full w-full object-cover"
-        />
+          <Image
+            src={Hero}
+            alt="Hero"
+            className="absolute inset-0 -z-10 h-full w-full object-cover"
+          />
+          <Image
+            src={Herouser}
+            alt="herouser"
+            className="absolute lg:-top-[2.75rem] -top-[1.8rem] right-0 ml-auto h-full 3xl:w-[71%] object-cover -z-10"
+          />
         <img
           src="./cup.png"
           alt=""
-          className="z-1 absolute lg:-bottom-56 bottom-[-100px] lg:right-20 right-0 lg:h-[580px] sm:h-[400px] h-[240px]"
+          className="z-1 absolute bottom-[-100px] right-0 h-[240px] sm:h-[400px] lg:-bottom-56 lg:right-20 lg:h-[580px]"
         />
-        <div className="lg:ml-20 sm:ml-[24px] ml-[14px] max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="ml-[14px] max-w-2xl py-32 sm:ml-[24px] sm:py-48 lg:ml-20 lg:py-56">
           <div className="text-left">
-            <h1 className="lg:space-y-8 lg:text-4xl sm:text-[40px] text-[30px] font-bold tracking-wider text-white">
+            <h1 className="font-Heading text-[30px] font-bold text-white sm:text-[40px] lg:space-y-8 lg:text-[103px]">
               <p>TIME TO </p>
               <p> DISCOVER</p>
               <p>COFFEE PLACE</p>
             </h1>
-            <p className="mt-6 text-lg text-gray-300">
+            <p className="mt-6 font-Body text-[25px] font-medium text-gray-300">
               What We Call The 3 C&apos;s <br /> Coffee - Community -
               Convenience
             </p>
             <div className="mt-10">
               <a
                 href="#"
-                className="rounded-full bg-[#9c8164df] px-3.5 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                className="rounded-full bg-[#9c8164df] px-4 py-4 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
               >
                 Find your next event
               </a>

@@ -19,10 +19,10 @@ function classNames(...classes: any) {
 
 export default function NavBar() {
   return (
-    <Disclosure as="header" className="fixed z-50 w-full backdrop-blur-lg">
+    <Disclosure as="header" className="fixed z-50 w-full navbargradient">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 py-4 sm:px-4 lg:px-8">
+          <div className="mx-auto lg:px-[160px] px-2 py-4 sm:px-4">
             <div className="relative flex h-16 justify-between">
               <div className="flex items-center gap-x-10">
                 <div className="relative z-10 flex px-2 lg:px-0">
