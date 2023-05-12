@@ -9,7 +9,7 @@ const posts = [
     href: "#",
     description: "Coffee house USA, Los Angeles...",
     imageUrl:
-      "https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80",
+      "./cafe.png",
     date: "Wed, Apr 20, 7:00 PM",
     datetime: "2020-03-16",
     eventName: "Coffeehouse Meetup",
@@ -21,7 +21,7 @@ const posts = [
     href: "#",
     description: "Coffee house USA, Los Angeles...",
     imageUrl:
-      "https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80",
+      "./otherevent.png",
     date: "Wed, Apr 20, 7:00 PM",
     datetime: "2020-03-16",
     eventName: "Coffeehouse Meetup",
@@ -33,7 +33,7 @@ const posts = [
     href: "#",
     description: "Coffee house USA, Los Angeles...",
     imageUrl:
-      "https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80",
+      "./otherevent2.png",
     date: "Wed, Apr 20, 7:00 PM",
     datetime: "2020-03-16",
     eventName: "Coffeehouse Meetup",
@@ -43,64 +43,70 @@ const posts = [
 ];
 const OtherEvents = () => {
   return (
-    <div className="mx-auto space-y-12 max-w-6xl py-20">
-      <div className="max-w-2xl text-left text-[#a0600cfb]">
-        <h3 className="text-2xl font-semibold tracking-tight sm:text-2xl">
+    <div className="mx-auto space-y-12 py-20">
+      <div className="text-left text-[#613907]">
+        <h3 className="text-[50px] font-Body font-medium leading-[80px]">
           Other Events You May Like
         </h3>
       </div>
       <div className="mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-x-28 gap-y-12 lg:mx-0 lg:max-w-none lg:grid-cols-3">
         {posts.map((post) => (
-          <article
-            key={post.id}
-            className="flex flex-col items-start justify-between bg-[#FFFFFF] shadow-lg"
-          >
-            <div className="relative w-full">
-              <img
-                src={post.imageUrl}
-                alt=""
-                className="aspect-[16/9] w-full bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
-              />
-              <div className="absolute -bottom-4 right-4 z-10 rounded-full bg-white p-2 shadow-xl">
-                <HeartIcon className="h-5 w-5 cursor-pointer hover:fill-red-500" />
-              </div>
-              <div className="absolute inset-0 ring-1 ring-inset ring-gray-900/10" />
-            </div>
-            <div className="mx-4 my-3 max-w-xl">
-              <div className="group relative">
-                <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                  <a href={post.href}>
-                    <span className="absolute inset-0" />
-                    {post.title}
-                  </a>
-                </h3>
-              </div>
-              <div className="mt-4 flex items-center gap-x-4 text-xs">
-                <time dateTime={post.datetime} className="text-gray-500">
-                  {post.date}
-                </time>
-              </div>
-              <div>
-                <p className="mt-4 line-clamp-3 text-sm leading-6 text-gray-600">
-                  {post.description}
-                </p>
-              </div>
-              <div className="relative mt-8 flex flex-col gap-x-2">
-                <p className="font-semibold text-gray-900">
-                  <a href={post.href}>
-                    <span className="absolute inset-0" />
-                    {post.eventName}
-                  </a>
-                </p>
-                <div className="mt-1 flex">
-                  <UserIcon className="mr-2 h-5 w-5" />
-                  <p className="text-sm leading-6 text-gray-600">
-                    {post.followers}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </article>
+           <article
+           key={post.id}
+           className="flex cursor-pointer flex-col items-start justify-between bg-[#FFFFFF] shadow-default hover:shadow-event max-w-[428px]"
+         >
+           <div className="relative w-full">
+             <img
+               src={post.imageUrl}
+               alt=""
+               className="aspect-[16/9] w-full bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
+             />
+             <div className="absolute -bottom-4 right-4 z-10 rounded-full bg-white p-2 shadow-xl">
+               <HeartIcon className="h-5 w-5 cursor-pointer hover:fill-red-500" />
+             </div>
+             <div className="absolute inset-0 ring-1 ring-inset ring-gray-900/10" />
+           </div>
+           <div className="mx-4 my-4 max-w-xl">
+             <div className="group relative">
+               <h3 className="mt-3 text-lg font-semibold leading-6 text-[#613907]">
+                 <a
+                   href={post.href}
+                   className="block max-w-[230px] font-WorkSans text-xl font-semibold"
+                 >
+                   <span className="absolute inset-0" />
+                   {post.title}
+                 </a>
+               </h3>
+             </div>
+             <div className="mt-5 flex items-center gap-x-4 text-base">
+               <time
+                 dateTime={post.datetime}
+                 className="font-Body font-semibold text-[#a48765]"
+               >
+                 {post.date}
+               </time>
+             </div>
+             <div>
+               <p className="mt-5 line-clamp-3 font-Body text-sm font-semibold leading-6 text-[#c8b49d]">
+                 {post.description}
+               </p>
+             </div>
+             <div className="relative mt-8 flex flex-col gap-x-2">
+               <p className="font-display font-medium text-[#724e22]">
+                 <a href={post.href}>
+                   <span className="absolute inset-0" />
+                   {post.eventName}
+                 </a>
+               </p>
+               <div className="mt-1 flex items-center">
+                 <img src="./usericon.svg" alt="usericon" />
+                 <p className="mt-1 font-display text-sm font-medium text-[#724e22]">
+                   {post.followers}
+                 </p>
+               </div>
+             </div>
+           </div>
+         </article>
         ))}
       </div>
     </div>

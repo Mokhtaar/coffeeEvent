@@ -4,12 +4,12 @@ import { GlobeAltIcon } from "@heroicons/react/24/outline";
 const Organizer = () => {
   return (
     <div className="space-y-7 pt-20">
-      <div className="max-w-2xl text-left text-[#a0600cfb]">
-        <h3 className="text-2xl font-semibold tracking-tight sm:text-2xl">
+      <div className="max-w-2xl text-left text-[#613907]">
+        <h3 className="text-[50px] font-Body font-medium leading-[80px]">
           About the organizer
         </h3>
       </div>
-      <div className="w-full max-w-sm rounded-lg border border-gray-200 bg-white shadow-xl">
+      <div className="w-full max-w-lg rounded-lg border border-gray-200 bg-white shadow-xl">
         <div className="flex flex-col items-center py-10">
           <img
             className="mb-3 h-24 w-24 rounded-full"

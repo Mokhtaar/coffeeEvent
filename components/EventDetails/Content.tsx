@@ -1,17 +1,18 @@
 import React from "react";
 import {
-  ArrowUpOnSquareIcon,
-  PlusSmallIcon,
-  MinusSmallIcon,
   ExclamationCircleIcon,
-  HeartIcon,
   CalendarDaysIcon,
   ClockIcon,
   MapPinIcon,
   DevicePhoneMobileIcon,
 } from "@heroicons/react/24/outline";
+import HeartIcon from "../../public/hearticon.svg";
+import Uploadeicon from "../../public/uploadeicon.svg";
 import OtherEvents from "./OtherEvents";
 import Organizer from "./Organizer";
+import Image from "next/image";
+import { FiPlus } from "react-icons/fi";
+import { FaAngleDown } from "react-icons/fa";
 
 const links = {
   social: [
@@ -68,177 +69,210 @@ const links = {
 
 const Content = () => {
   return (
-    <div className="mx-auto max-w-6xl px-6 py-24 lg:px-0">
-      <div className="flex-col items-center justify-between gap-x-28 pb-24 sm:flex sm:flex-row">
+    <div className="mx-auto px-2 py-24 sm:px-4 lg:px-[160px]">
+      <p className="text-lg">Apr 20</p>
+      <div className="flex-col items-start justify-between gap-x-[15%] pb-24 sm:flex sm:flex-row">
         <div className="space-y-10">
-          <div>
-            <p>Apr 20</p>
-            <h3 className="text-2xl font-semibold tracking-tight text-[#a0600cfb] sm:text-4xl">
+          <div className="font-Body text-[#613907]">
+            <h3 className="mt-3 font-WorkSans text-2xl font-extrabold capitalize text-[#613907] sm:text-5xl">
               Get to know connecting you to batch roasters program
             </h3>
           </div>
-          <p className="text-[12px]">
+          <p className="mt-[55px] font-Body text-[18px] text-[#613907] xl:whitespace-nowrap">
             Come hear about our batch roasters program and learn some career
             tips from our CTO and co-found.
           </p>
 
-          <div className="w-full rounded-md bg-gray-50 px-6 py-5 shadow-lg sm:flex sm:items-start sm:justify-between">
-            <div className="sm:flex sm:items-start">
+          <div className="h-[150px] w-full items-center rounded-md bg-white pl-[52px] pr-[39px] shadow-lg sm:flex sm:justify-between">
+            <div className="sm:flex sm:items-center">
               <img
-                className="h-8 w-8 rounded-full sm:h-10 sm:flex-shrink-0"
-                src="./left.png"
+                className="h-8 w-8 rounded-full object-cover sm:h-[95px] sm:w-[95px] sm:flex-shrink-0"
+                src="./hero2.png"
               ></img>
-              <div className="mt-3 sm:ml-4 sm:mt-0">
-                <div className="text-sm font-medium text-gray-900">
-                  By Roasters program
+              <div className="mt-3 sm:ml-[32px] sm:mt-0">
+                <div className="text-[25px] font-bold text-[#613907]">
+                  <span className="font-Inter font-bold text-[#A1825F]">
+                    By{" "}
+                  </span>
+                  Roasters program
                 </div>
-                <div className="mt-1 text-sm text-gray-600 sm:flex sm:items-center">
-                  <div>40 Followers</div>
+                <div className="mt-1 font-Body text-[18px] font-bold text-[#A1825F] sm:flex sm:items-center">
+                  <div>40 followers</div>
                 </div>
               </div>
             </div>
             <div className="mt-4 sm:ml-6 sm:mt-0 sm:flex-shrink-0">
               <button
                 type="button"
-                className="inline-flex items-center rounded-md bg-[#9c8164df] px-6 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-[#bba994df]"
+                className="flex h-[68px] w-[167px] items-center justify-center rounded-[3px] bg-[#9c8164df] font-Inter text-[20px] font-bold text-white ring-0 drop-shadow-box"
               >
                 Follow
               </button>
             </div>
           </div>
         </div>
-        <div className="relative">
-          <div className="absolute right-10 flex items-center justify-end gap-x-5">
-            <HeartIcon className="h-5 w-5" />
-            <ArrowUpOnSquareIcon className="h-5 w-5" />
+        <div>
+          <div className="flex items-center justify-end gap-x-[56px]">
+            <Image src={HeartIcon} alt="HeartIcon" />
+            <Image src={Uploadeicon} alt="uploadeicon" />
           </div>
-          <div className="m-10 rounded-md border border-gray-300 p-4">
-            <div className="flex flex-row justify-between rounded border-2 border-[#b48759df] p-4">
+          <div className="mt-[55px] rounded-xl border border-gray-300 p-[30px]">
+            <div className="flex flex-row justify-between rounded-xl border-2 border-[#b48759df] p-[30px] pb-[18px]">
               <div>
-                <p className="pr-16">
+                <p className="pr-[67px] font-WorkSans text-[20px] font-medium text-[#613907]">
                   Get to know connecting you to batch roasters program
                 </p>
-                <div className="mt-3 flex items-center gap-x-3">
-                  <p className="text-[14px]">Free</p>
-                  <ExclamationCircleIcon className="h-4 w-4 text-gray-500" />
+                <div className="mt-5 flex items-center gap-x-3">
+                  <p className=" font-WorkSans text-[20px] font-medium text-[#613907]">
+                    Free
+                  </p>
+                  <ExclamationCircleIcon className="h-[18px] w-[18px] text-[#613907]" />
                 </div>
               </div>
-              <div className="flex gap-x-2">
-                <MinusSmallIcon className="h-5 w-5 rounded-sm bg-[#c5b9addf]" />
-                <p>1</p>
-                <PlusSmallIcon className="h-5 w-5  rounded-sm bg-[#9c8164df]" />
+              <div className="flex h-fit gap-x-2">
+                <button className="flex h-[39px] w-[39px] items-center justify-center rounded-md bg-[#EFE3D5]">
+                  <span className="block h-[3px] w-[15px] rounded-full bg-[#D8C1A8]"></span>
+                </button>
+                <p className="font-Body text-[25px] font-semibold text-[#613907]">
+                  1
+                </p>
+                <button className="flex h-[39px] w-[39px] items-center justify-center rounded-md bg-[#A1825F] text-[#EFE3D5]">
+                  <FiPlus className="h-[25px] w-[25px]" />
+                </button>
               </div>
             </div>
-            <button className="mx-auto mt-2 w-full rounded-md bg-orange-700 p-2 text-white">
+            <button className="mx-auto mt-[20px] w-full rounded-md bg-[#D1410C] py-[15px] font-Inter text-[20px] font-bold text-white">
               Reserve a spot
             </button>
           </div>
         </div>
       </div>
-      <div className="space-y-16 pb-24">
+      <div className="pb-24">
         <div className="space-y-6">
-          <div className="max-w-2xl text-left text-[#a0600cfb]">
-            <h3 className="text-2xl font-semibold tracking-tight sm:text-2xl">
+          <div className="max-w-2xl text-left">
+            <h3 className="font-Body text-2xl font-semibold tracking-tight text-[#62390b] sm:text-[50px]">
               When and Where
             </h3>
           </div>
-
-          <div className="w-[48rem] flex-col justify-between sm:flex sm:flex-row">
+          <div className="mt-[34px] flex-col justify-between sm:flex sm:flex-row lg:w-[893px]">
             <div className="flex  w-72">
-              <div className="mr-4 flex h-9 w-9 items-center justify-center bg-[#ccc7c1df]">
-                <CalendarDaysIcon className="h-6 w-6 " />
+              <div className="mr-4 flex max-h-[65px] min-w-[65px] items-center justify-center rounded-md bg-[#e9e1d9]">
+                <Image
+                  src="./calendar.svg"
+                  alt="calender"
+                  width={27}
+                  height={30}
+                />
               </div>
               <div>
-                <h4 className="font-semibold">Date and Time</h4>
-                <p className=" text-[13px]">
+                <h4 className="font-Inter text-[20px] font-bold">
+                  Date and Time
+                </h4>
+                <p className=" whitespace-nowrap text-[15px] text-[#A1825F]">
                   wednesday, April 20. 8 - 9:00 PM IDT
                 </p>
               </div>
             </div>
             <div className="flex  w-72">
-              <div className="mr-4 mt-2 flex h-9 w-9 items-center justify-center bg-[#ccc7c1df]">
-                <MapPinIcon className="h-6 w-6 " />
+              <div className="mr-4 flex max-h-[65px] min-w-[65px] items-center justify-center rounded-md bg-[#e9e1d9]">
+                <Image
+                  src="./calendar.svg"
+                  alt="calender"
+                  width={27}
+                  height={30}
+                />
               </div>
               <div>
-                <h4 className="font-semibold">Date and Time</h4>
-                <p className="mt-1 text-[13px]">
-                  Coffee House, USA, Los Angeles, <br /> Los Angeles District
-                  000 USA
+                <h4 className="font-Inter text-[20px] font-bold">
+                  Date And Time
+                </h4>
+                <p className=" whitespace-nowrap font-Inter text-[15px] text-[#A1825F]">
+                  Coffee House USA, Los Angeles,
+                  <br />
+                  Los Angeles District 000 USA
+                </p>
+                <p className=" mt-5 flex items-center gap-[14px] whitespace-nowrap font-Inter text-[15px] font-bold text-[#613907]">
+                  Show Map <FaAngleDown />
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div className="space-y-6">
+        <div className="mt-[118px]">
           <div className="max-w-2xl text-left text-[#a0600cfb]">
-            <h3 className="text-2xl font-semibold tracking-tight sm:text-2xl">
+            <h3 className="font-Body text-2xl font-semibold tracking-tight text-[#62390b] sm:text-[50px]">
               About this event
             </h3>
           </div>
-          <div className="w-[48rem] flex-col justify-between sm:flex sm:flex-row">
-            <div className="flex w-72 items-center">
-              <div className="mr-4 flex h-9 w-9 items-center justify-center bg-[#ccc7c1df]">
-                <ClockIcon className="h-6 w-6 " />
+          <div className="mt-[32px] flex-col justify-between sm:flex sm:flex-row lg:w-[48rem]">
+            <div className="flex  w-72 items-center">
+              <div className="mr-4 flex min-h-[65px] min-w-[65px] items-center justify-center rounded-md bg-[#e9e1d9]">
+                {/* <Image src='./calendar.svg' alt='calender' width={27} height={30} /> */}
+                <ClockIcon className="w-[30px]" />
               </div>
-              <div>
-                <h4 className="font-semibold">1 Hour 30 Minutes</h4>
-              </div>
+              <h4 className="font-Inter text-[20px] font-bold text-[#613907]">
+                {" "}
+                1 Hour 30 Minutes
+              </h4>
             </div>
-            <div className="flex w-72 items-center">
-              <div className="mr-4 mt-2 flex h-9 w-9 items-center justify-center bg-[#ccc7c1df]">
-                <DevicePhoneMobileIcon className="h-6 w-6 " />
+            <div className="flex  w-72 items-center">
+              <div className="mr-4 flex min-h-[65px] min-w-[65px] items-center justify-center rounded-md bg-[#e9e1d9]">
+                <Image
+                  src="./Mobile.svg"
+                  alt="calender"
+                  width={27}
+                  height={30}
+                />
               </div>
-              <div>
-                <h4 className="font-semibold">Mobile eTicket</h4>
-              </div>
+              <h4 className="font-Inter text-[20px] font-bold text-[#613907]">
+                Mobile eTicket
+              </h4>
             </div>
           </div>
         </div>
       </div>
-      <div className="space-y-2 pb-20">
+      <div className="mt-6 pb-20">
         <div>
-          <h1 className="mb-4 text-sm font-semibold  focus:border-blue-500 focus:ring-blue-500 ">
-            Agenda
+          <h1 className="font-WorkSans text-[30px] font-bold text-[#613907] ">
+            Agenda:
           </h1>
-          <p>18:00 - 18:15 : Networking, Food and Drinks</p>
-          <p>lorem ipsum dolor sit amet consectetuer adipiscing elit</p>
-        </div>
-        <div>
-          <p>18:00 - 18:15 : Networking, Food and Drinks</p>
-          <p>lorem ipsum dolor sit amet consectetuer adipiscing elit</p>
-        </div>
-        <div>
-          <p>18:00 - 18:15 : Networking, Food and Drinks</p>
-          <p>lorem ipsum dolor sit amet consectetuer adipiscing elit</p>
+          <div className="mt-[33px] text-[30px] font-normal font-Body text-[#613907] flex flex-col gap-5">
+            <div>
+              <p>18:00 - 18:15 : Networking, Food and Drinks</p>
+              <p>lorem ipsum dolor sit amet consectetuer adipiscing elit</p>
+            </div>
+            <div>
+              <p>18:00 - 18:15 : Networking, Food and Drinks</p>
+              <p>lorem ipsum dolor sit amet consectetuer adipiscing elit</p>
+            </div>
+            <div>
+              <p>18:00 - 18:15 : Networking, Food and Drinks</p>
+              <p>lorem ipsum dolor sit amet consectetuer adipiscing elit</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="space-y-2 pb-20">
-        <div className="max-w-xl">
-          <h1 className="mb-4 text-sm font-semibold  focus:border-blue-500 focus:ring-blue-500 ">
+      <div className="pt-5 pb-20">
+        <div>
+          <h1 className="mb-4 text-[20px] font-Body leading-[37px] font-bold">
             Want more information on our open event positions? check out the
             links below!
           </h1>
-          <ul className="list-inside list-decimal space-y-4">
-            <li>
-              lorem ipsum dolor sit amet consectetuer adipiscing elit sed do
-              eiusmod tempor incididunt ut labore consectetuer adipiscing elit
-              sed do eiusmod tempor incididunt ut labore
+          <ul className="font-normal font-Body text-[25px] text-[#613907] capitalize w-[840px] flex flex-col gap-[43px]">
+            <li>1. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
             </li>
-            <li>
-              lorem ipsum dolor sit amet consectetuer adipiscing elit sed do
-              eiusmod tempor incididunt ut labore consectetuer adipiscing elit
-              sed do eiusmod tempor incididunt ut labore
+            <li>2. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
             </li>
           </ul>
         </div>
       </div>
       <div className="space-y-7">
-        <div className="max-w-2xl text-left text-[#a0600cfb]">
-          <h3 className="text-2xl font-semibold tracking-tight sm:text-2xl">
+        <div className="max-w-2xl text-left">
+          <h3 className="font-medium text-[50px] text-[#613907] font-Body">
             Share with friends
           </h3>
         </div>
-        <div className="w- flex w-60 justify-center space-x-6">
+        <div className="w- flex w-[20rem] justify-center gap-[52px]">
           {links.social.map((item) => (
             <a
               key={item.name}
