@@ -16,7 +16,7 @@ const PersonalEvent = () => {
                   <div className="flex-shrink-0">
                     <img
                       className="h-11 w-11"
-                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      src="./formimg.jpg"
                       alt=""
                     />
                   </div>
@@ -97,15 +97,15 @@ const PersonalEvent = () => {
           </div>
         </div>
         <div className="space-y-10 pt-7 sm:pt-0 text-left md:mt-0 sm:mt-[100px]">
-          <h3 className="md:text-4xl text-[30px] font-semibold tracking-tight text-[#a0600cfb]">
+          <h3 className="md:text-4xl text-[30px] tracking-tight text-[#613907] font-default font-extrabold">
             Allow you to create your personal event
           </h3>
-          <ul className="ml-3 list-outside list-disc space-y-4">
+          <ul className="ml-3 list-outside list-disc space-y-4 text-[#613907] font-Body font-medium text-[22px]">
             <li>
               Create a professional, seamless experience for your attendees at
               every stage of your online or in-person event.
             </li>
-            <li>
+            <li className="mt-[62px]">
               Reach new customers, drive demand, and build relationships with
               our powerful, built-in marketing and communication tools.
             </li>

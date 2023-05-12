@@ -4,6 +4,7 @@ import cx from "classnames";
 import { sfPro, inter } from "./fonts";
 import NavBar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
+// import { useRouter } from "next/router";
 
 export const metadata = {
   title: "Precedent - Building blocks for your Next.js project",
@@ -25,14 +26,13 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // const router = useRouter();
   return (
     <html lang="en">
       <body className={cx(sfPro.variable, inter.variable)}>
         {/* <div className="fixed h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100" /> */}
-        <NavBar/>
-        <main className="w-full bg-[#EFE6DC]">
-          {children}
-        </main>
+        <NavBar />
+        <main className="gradient w-full overflow-x-hidden">{children}</main>
         <Footer />
         <Analytics />
       </body>

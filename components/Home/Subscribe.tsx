@@ -1,37 +1,41 @@
 export default function Subscribe() {
   return (
-    <div className="sm:py-24 lg:py-32">
-      <div className="mx-auto grid max-w-7xl grid-rows-2 px-[14px] lg:gap-8 lg:px-8">
+    <div className="bgimg sm:pt-24 lg:pt-28 pb-[241px]">
+      <div className="mx-auto lg:px-[160px] px-[14px] lg:gap-8">
         <div className="mx-auto">
-          <h2 className="inline text-3xl font-bold tracking-normal text-gray-900 sm:block sm:text-5xl lg:inline xl:block">
-            Subscribe To Join the Community
+          <h2 className="text-center font-display text-[20px] font-medium leading-[75px] text-[#613907] sm:block sm:text-5xl lg:inline xl:block">
+            <span className="text-[#A1825F]">SUBSCRIBE</span> To Join The
+            Community
           </h2>
-          <p className="mt-8 mb-4">
-            Lorem Ipsum has been the industry&apos;s standard dummy text ever
-            since the 1500s, Lorem Ipsum has been the
+          <p className="my-8 text-[#613907] text-center text-[20px]">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna
           </p>
         </div>
-        <form className="mx-auto w-full max-w-lg lg:pt-2">
-          <div className="sm:flex gap-x-4">
-            <label htmlFor="email-address" className="sr-only">
-              Email address
-            </label>
+        <form className="mx-auto grid 2xl:grid-cols-4 gap-y-3 lg:grid-cols-2 md:grid-cols-2 w-full max-w-[1540px] items-center lg:pt-2">
+          <input
+            type="text"
+            className="placeholder:font-me h-[93px] lg:min-w-[363px] w-full border-none pl-[41px] font-Body
+          text-[20px] font-medium text-[#A1825F] placeholder:font-Body placeholder:text-[20px] placeholder:text-[#A1825F] focus:border-none focus:shadow-none focus:outline-none focus:ring-0"
+            placeholder="first name"
+          />
+          <div className="inputline relative">
             <input
-              id="email-address"
-              name="email"
-              type="email"
-              autoComplete="email"
-              required
-              className="min-w-0 flex-auto rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              placeholder="Enter your email"
+              type="text"
+              className="placeholder:font-me h-[93px] lg:min-w-[363px] w-full border-none
+            pl-[41px] font-Body text-[20px] font-medium text-[#A1825F] placeholder:font-Body placeholder:text-[20px] placeholder:text-[#A1825F] focus:border-none focus:shadow-none focus:outline-none focus:ring-0"
+              placeholder="last name"
             />
-            <button
-              type="submit"
-              className="flex-none rounded-md bg-[#9c8164df] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            >
-              Subscribe
-            </button>
           </div>
+          <input
+            type="text"
+            className="placeholder:font-me h-[93px] lg:min-w-[596px] w-full border-none pl-[41px] font-Body
+          text-[20px] font-medium text-[#A1825F] placeholder:font-Body placeholder:text-[20px] placeholder:text-[#A1825F] focus:border-none focus:shadow-none focus:outline-none focus:ring-0"
+            placeholder="email address"
+          />
+          <button className="flex h-[93px] w-[228px] items-center justify-center bg-[#613907] font-default text-[30px] font-[500] text-white">
+            JOIN
+          </button>
         </form>
       </div>
     </div>
