@@ -69,10 +69,11 @@ const links = {
 
 const Content = () => {
   return (
-    <div className="mx-auto px-2 py-24 sm:px-4 lg:px-[160px]">
+    <div className="mx-auto px-2 py-10 sm:px-4 lg:px-[160px]">
       <p className="text-lg">Apr 20</p>
-      <div className="flex-col items-start justify-between gap-x-[15%] pb-24 sm:flex sm:flex-row">
-        <div className="space-y-10">
+      <div className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-5
+       pb-24  gap-y-7">
+        <div className="space-y-10 col-span-2 max-w-[928px]">
           <div className="font-Body text-[#613907]">
             <h3 className="mt-3 font-WorkSans text-2xl font-extrabold capitalize text-[#613907] sm:text-5xl">
               Get to know connecting you to batch roasters program
@@ -83,7 +84,7 @@ const Content = () => {
             tips from our CTO and co-found.
           </p>
 
-          <div className="h-[150px] w-full items-center rounded-md bg-white pl-[52px] pr-[39px] shadow-lg sm:flex sm:justify-between">
+          <div className="min-h-[150px] w-full items-center rounded-md bg-white md:pl-[52px] md:pr-[39px] p-4 shadow-lg sm:flex sm:justify-between">
             <div className="sm:flex sm:items-center">
               <img
                 className="h-8 w-8 rounded-full object-cover sm:h-[95px] sm:w-[95px] sm:flex-shrink-0"
@@ -101,7 +102,7 @@ const Content = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-4 sm:ml-6 sm:mt-0 sm:flex-shrink-0">
+            <div className="mt-4 sm:ml-6 sm:mt-0 sm:flex-shrink-0  w-fit">
               <button
                 type="button"
                 className="flex h-[68px] w-[167px] items-center justify-center rounded-[3px] bg-[#9c8164df] font-Inter text-[20px] font-bold text-white ring-0 drop-shadow-box"
@@ -111,15 +112,15 @@ const Content = () => {
             </div>
           </div>
         </div>
-        <div>
-          <div className="flex items-center justify-end gap-x-[56px]">
+        <div className="2xl:col-span-1 md:col-span-2">
+          <div className="flex items-center justify-end gap-x-[56px] md:mr-0 mr-3">
             <Image src={HeartIcon} alt="HeartIcon" />
             <Image src={Uploadeicon} alt="uploadeicon" />
           </div>
           <div className="mt-[55px] rounded-xl border border-gray-300 p-[30px]">
-            <div className="flex flex-row justify-between rounded-xl border-2 border-[#b48759df] p-[30px] pb-[18px]">
+            <div className="flex flex-row justify-between rounded-xl border-2 border-[#b48759df] p-[30px] pb-[18px] xl:flex-nowrap flex-wrap">
               <div>
-                <p className="pr-[67px] font-WorkSans text-[20px] font-medium text-[#613907]">
+                <p className="2xl:pr-[67px] font-WorkSans text-[20px] font-medium text-[#613907]">
                   Get to know connecting you to batch roasters program
                 </p>
                 <div className="mt-5 flex items-center gap-x-3">
@@ -147,6 +148,11 @@ const Content = () => {
           </div>
         </div>
       </div>
+
+
+
+
+
       <div className="pb-24">
         <div className="space-y-6">
           <div className="max-w-2xl text-left">
@@ -168,12 +174,12 @@ const Content = () => {
                 <h4 className="font-Inter text-[20px] font-bold">
                   Date and Time
                 </h4>
-                <p className=" whitespace-nowrap text-[15px] text-[#A1825F]">
+                <p className="lg:whitespace-nowrap text-[15px] text-[#A1825F]">
                   wednesday, April 20. 8 - 9:00 PM IDT
                 </p>
               </div>
             </div>
-            <div className="flex  w-72">
+            <div className="flex  w-72 md:mt-0 mt-5">
               <div className="mr-4 flex max-h-[65px] min-w-[65px] items-center justify-center rounded-md bg-[#e9e1d9]">
                 <Image
                   src="./calendar.svg"
@@ -186,7 +192,7 @@ const Content = () => {
                 <h4 className="font-Inter text-[20px] font-bold">
                   Date And Time
                 </h4>
-                <p className=" whitespace-nowrap font-Inter text-[15px] text-[#A1825F]">
+                <p className="lg:whitespace-nowrap font-Inter text-[15px] text-[#A1825F]">
                   Coffee House USA, Los Angeles,
                   <br />
                   Los Angeles District 000 USA
@@ -215,7 +221,7 @@ const Content = () => {
                 1 Hour 30 Minutes
               </h4>
             </div>
-            <div className="flex  w-72 items-center">
+            <div className="flex  w-72 items-center md:mt-0 mt-5">
               <div className="mr-4 flex min-h-[65px] min-w-[65px] items-center justify-center rounded-md bg-[#e9e1d9]">
                 <Image
                   src="./Mobile.svg"
@@ -236,7 +242,7 @@ const Content = () => {
           <h1 className="font-WorkSans text-[30px] font-bold text-[#613907] ">
             Agenda:
           </h1>
-          <div className="mt-[33px] text-[30px] font-normal font-Body text-[#613907] flex flex-col gap-5">
+          <div className="mt-[33px] lg:text-[30px] font-normal font-Body text-[#613907] flex flex-col gap-5">
             <div>
               <p>18:00 - 18:15 : Networking, Food and Drinks</p>
               <p>lorem ipsum dolor sit amet consectetuer adipiscing elit</p>
@@ -258,7 +264,7 @@ const Content = () => {
             Want more information on our open event positions? check out the
             links below!
           </h1>
-          <ul className="font-normal font-Body text-[25px] text-[#613907] capitalize w-[840px] flex flex-col gap-[43px]">
+          <ul className="font-normal font-Body md:text-[25px] text-[#613907] capitalize lg:w-[840px] flex flex-col gap-[43px]">
             <li>1. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
             </li>
             <li>2. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
@@ -268,7 +274,7 @@ const Content = () => {
       </div>
       <div className="space-y-7">
         <div className="max-w-2xl text-left">
-          <h3 className="font-medium text-[50px] text-[#613907] font-Body">
+          <h3 className="font-medium md:text-[50px] text-[30px] text-[#613907] font-Body">
             Share with friends
           </h3>
         </div>

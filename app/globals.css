@@ -78,3 +78,57 @@ body {
   top: 0;
   left: 0;
 }
+.owl-nav
+{
+  position: absolute;
+  top: -100px;
+  right: 0px;
+  display: block !important; 
+}
+.owl-carousel .owl-nav.disabled
+{
+  display: block;
+}
+button.owl-prev
+{
+  width: 49px;
+  height: 44px;
+  border-radius: 4px;
+  background-color: #EFE3D5 !important;
+  background-image: url(../public/arrow.png) !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.owl-prev[class*='owl-']:hover
+{
+  background-color:#EFE3D5 !important;
+  background-image: url(../public/arrow.png) !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.owl-prev span
+{
+  display: none !important;
+}
+ button.owl-next
+{
+  width: 49px !important;
+  height: 44px !important;
+  border-radius: 4px !important;
+  background-color: #613907 !important;
+  background-image: url(../public/arrowright.png) !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.owl-next [class*='owl-']:hover
+{
+  background-color:#613907 !important;
+  background-image: url(../public/arrowright.png) !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+
+}
+.owl-next span
+{
+  display: none !important;
+}
